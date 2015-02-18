@@ -1,0 +1,15 @@
+Source: ginger
+Section: misc
+Priority: optional
+Maintainer: Frédéric Bonnard <frediz@linux.vnet.ibm.com>
+Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 9), dh-autoreconf, python, pep8
+Homepage: https://github.com/kimchi-project/ginger
+
+Package: ginger
+Architecture: any
+Depends: kimchi, python-libuser, lm-sensors, hddtemp, powerpc-ibm-utils [powerpc ppc64 ppc64el], ${misc:Depends}
+Description: Host management plugin to Kimchi
+ Ginger provides an intuitive web panel with common tools for configuring and
+ operating Linux systems. Kimchi is a web server application to manage KVM/Qemu
+ virtual machines.
