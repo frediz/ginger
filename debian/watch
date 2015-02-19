@@ -1,3 +1,3 @@
 version=3
-opts=filenamemangle=s/.+\/ginger-v?(\d\S*)\.tar\.gz/ginger-$1\.tar\.gz/ \
-  https://github.com/kimchi-project/ginger/tags .*/ginger-v?(\d\S*)\.tar\.gz
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/ginger-$1\.tar\.gz/,uversionmangle=s/-rc/~rc/ \
+  https://github.com/kimchi-project/ginger/tags .*/v?(\d\S*)\.tar\.gz
